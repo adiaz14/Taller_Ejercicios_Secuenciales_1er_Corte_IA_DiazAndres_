@@ -194,7 +194,21 @@ print(f'Valor consumido de la tarjeta: ${consumo_tarjeta:,}\n')
 print(f'Valor del recargo del 20%: ${recargo_consumo:,}\n')
 print(f'Total costo de la llamada (consumo + recargo): ${costo_total:,}\n')
 
+# 10. En una fototienda cobran por el revelado de un rollo $1.500 por cada
+# foto. Realice un algoritmo que determine el monto a pagar por un
+# revelado completo sabiendo que adiconalmente le cobran el IVA
+# (16%).
 
+print('\n--------- DATOS DEL REVELADO DE ROLLOS  ---------\n')
+num_fotos = int(input('Digite número de fotos reveladas: '))
+costo_revelado = num_fotos * 1500
+iva = costo_revelado * 0.16
+costo_total = costo_revelado + iva
+
+print('\n----------- RESUMEN DEL COSTO DE REVELADO DE ROLLOS -----------\n')
+print(f'Costo de revelado de {num_fotos} fotos: ${costo_revelado:,}\n')
+print(f'Costo del Iva del 16%: ${iva:,}\n')
+print(f'Costo total del revelado de rollos (costo + Iva): ${costo_total:,}\n')
 
 
 
